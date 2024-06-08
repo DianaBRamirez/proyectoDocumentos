@@ -1,0 +1,27 @@
+.botonesVerdes {
+    background-color: #37BFA8;
+    border-color: #37BFA8;
+    color: white;
+  }
+
+table.dataTable thead th, table.dataTable thead td { border-bottom: 2px solid #37BFA8; border-top: 2px solid #37BFA8; }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+      color: #fcf6f6;
+      border: #37BFA8 !important;
+      background-color: #37BFA8 !important;
+      background: #37BFA8 !important;
+      background: -webkit-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+      background: -moz-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+      background: -ms-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+      background: -o-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+      background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+  }
+
+  .dataTables_wrapper .dataTables_filter input {
+    margin-left: 0;
+    margin-bottom: 10px;
+    border: 1px solid #37BFA8;
+  
+}
