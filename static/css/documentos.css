@@ -4,6 +4,19 @@
     color: white;
   }
 
+  .card-img-top {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .cardsVerdes{
+    border: 2px solid #37BFA8;
+  }
+
+  .textosJustificados{
+    text-align: justify;
+  }
+
 table.dataTable thead th, table.dataTable thead td { border-bottom: 2px solid #37BFA8; border-top: 2px solid #37BFA8; }
 
   .dataTables_wrapper .dataTables_paginate .paginate_button.current,
