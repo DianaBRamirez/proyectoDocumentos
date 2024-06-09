@@ -1,45 +1,47 @@
+{% extends './base.html' %}
+<!-- Se incluye en archivo de base con lo demás -->
+{% block title %}
+  Actividad tutorial
+{% endblock %} <!-- Se cambia el título -->
 
+{% block body %}
+  <!-- Esta es para el navbar -->
 
-{% extends "./base.html" %}<!--Se incluye en archivo de base con lo demás -->
-{% block title %} Actividad tutorial {% endblock %} <!-- Se cambia el título-->
-
-{% block body %} <!-- Esta es para el navbar -->
-
-<center><h1>Actividad tutorial</h1></center>
-<div class="container">
-  <div class="row">
-      <div class="col text-end ">
-          <button type="button" class="btn btn-outline-success botonesVerdes">Registrar</button>
+  <center>
+    <h3 class="titulos">Actividad tutorial</h3>
+  </center>
+  <div class="container">
+    <div class="row">
+      <div class="col text-end">
+        <a href="{% url 'agregarActividad' %}" class="btn btn-success botonesVerdes bi bi-clipboard2-plus">Registrar</a>
       </div>
+    </div>
   </div>
-</div>
 
-
-<div class="table-responsive py-2 mt-2">
-  <!-- Hacemos responsiva -->
-  <table class="cell-border hover" cellspacing="0" width="100%" id="actividadTutorial">
-    <thead >
-      <!-- Encabezados -->
-      <tr class="text-center;" >
-        <th style="text-align: center;">Tema</th>
-        <th style="text-align: center;">Objetivos</th>
-        <th style="text-align: center;">Recursos</th>
-        <th style="text-align: center;">Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="text-align: justify; ">
-        <td>Lorem ipsum.</td>
-        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe rerum fuga similique molestias repellendus magnam natus, nemo corrupti corporis quod aperiam soluta voluptate labore repellat cumque nobis perferendis, sed minima.</td>
-        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe rerum fuga similique molestias repellendus magnam natus, nemo corrupti corporis quod aperiam soluta voluptate labore repellat cumque nobis perferendis, sed minima.</td>
-        <td>
-          <a href="" class="bi bi-info-circle " style="size:24px"></a>
-          <a href="" class="bi bi-pencil-square text-info-emphasis"></a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+  <div class="table-responsive py-2">
+    <!-- Hacemos responsiva -->
+    <table class="cell-border hover" cellspacing="0" width="100%" id="actividadTutorial">
+      <thead>
+        <!-- Encabezados -->
+        <tr class="text-center;">
+          <th style="text-align: center;">Tema</th>
+          <th style="text-align: center;">Objetivos</th>
+          <th style="text-align: center;">Recursos</th>
+          <th style="text-align: center;">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: justify; ">Lorem ipsum.</td>
+          <td style="text-align: justify; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe rerum fuga similique molestias repellendus magnam natus, nemo corrupti corporis quod aperiam soluta voluptate labore repellat cumque nobis perferendis, sed minima.</td>
+          <td style="text-align: justify; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe rerum fuga similique molestias repellendus magnam natus, nemo corrupti corporis quod aperiam soluta voluptate labore repellat cumque nobis perferendis, sed minima.</td>
+          <td style="text-align: center; ">
+            <a href="" class="bi bi-info-circle text-black"></a>
+            <a href="" class="bi bi-pencil-square text-info-emphasis"></a>
+            <a href="" class="bi bi-trash text-danger"></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 {% endblock %}
-

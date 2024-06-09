@@ -1,0 +1,33 @@
+{% extends './base.html' %}
+<!-- Se incluye en archivo de base con lo demás -->
+{% block title %}
+  Registro actividad tutorial
+{% endblock %} <!-- Se cambia el título -->
+
+{% block body %}
+  <!-- Esta es para el navbar -->
+  <div class="formsAgregar">
+    <center>
+      <h3 class="titulos mt-3">Actividad tutorial</h3>
+    </center>
+
+    <div class="row py-4 mx-4">
+      <div class="col-12 col-sm-6">
+        <!-- Contenido de la primera columna -->
+
+        <label class="mt-2">Tema</label>
+        <input type="text" class="form-control" />
+        <label class="mt-2">Objetivos</label>
+        <textarea class="form-control"></textarea>
+        <label class="mt-2">Recursos</label>
+        <textarea class="form-control"></textarea>
+      </div>
+      <div class="col-12 col-sm-6">
+        <label class="mt-2">Actividades</label>
+        <textarea class="form-control"></textarea>
+        <label class="mt-2">Evidencia</label>
+        <input type="file" class="form-control" />
+      </div>
+    </div>
+  </div>
+{% endblock %}
