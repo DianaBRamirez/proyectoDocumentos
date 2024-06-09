@@ -36,9 +36,9 @@
           <td style="text-align: justify; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe rerum fuga similique molestias repellendus magnam natus, nemo corrupti corporis quod aperiam soluta voluptate labore repellat cumque nobis perferendis, sed minima.</td>
           <td style="text-align: justify; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe rerum fuga similique molestias repellendus magnam natus, nemo corrupti corporis quod aperiam soluta voluptate labore repellat cumque nobis perferendis, sed minima.</td>
           <td style="text-align: center; ">
-            <a href="" class="bi bi-info-circle text-black"></a>
-            <a href="" class="bi bi-pencil-square text-info-emphasis"></a>
-            <a href="" class="bi bi-trash text-danger"></a>
+            <a href="{% url 'infoActividad' %}" class="bi bi-info-circle text-black"></a>
+            <a href="{% url 'editarActividad' %}" class="bi bi-pencil-square text-info-emphasis"></a>
+            <a href="" id="eliminar" onclick="return confirmarEliminacion()" class="bi bi-trash text-danger"></a>
           </td>
         </tr>
       </tbody>

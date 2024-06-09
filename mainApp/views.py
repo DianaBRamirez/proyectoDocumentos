@@ -10,3 +10,8 @@ def home(request):
 def agregarActividadTutorial(request):
     return render(request, 'agregarActividad.html')   
 
+def editarActividadTutorial(request):
+    return render(request, 'editarActividad.html')   
+
+def infoActividadTutorial(request):
+    return render(request, 'infoActividad.html')   

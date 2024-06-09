@@ -1,14 +1,14 @@
 {% extends './base.html' %}
 <!-- Se incluye en archivo de base con lo demás -->
 {% block title %}
-  Registro actividad tutorial
+  Editar actividad tutorial
 {% endblock %} <!-- Se cambia el título -->
 
 {% block body %}
   <!-- Esta es para el navbar -->
   <div class="formsAgregar" style="background-color: #F4F4F4">
     <center>
-      <h3 class="titulos mt-3">Actividad tutorial</h3>
+      <h3 class="titulos mt-3">Editar actividad tutorial</h3>
     </center>
 
     <div class="row py-4 mx-4">
@@ -30,7 +30,7 @@
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <a class="btn btn-secondary botonesGrises mt-2" href="{% url 'home' %}">Cerrar</a>
-          <a type="submit" class="btn btn-success botonesVerdes mt-2" onclick="return confirmarAgregar()">Guardar</a>
+          <a type="submit" class="btn btn-success botonesVerdes mt-2" onclick="return confirmarEditar()">Guardar</a>
         </div>
       </div>
     </div>
