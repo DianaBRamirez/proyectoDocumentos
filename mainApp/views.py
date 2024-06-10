@@ -14,4 +14,7 @@ def editarActividadTutorial(request):
     return render(request, 'editarActividad.html')   
 
 def infoActividadTutorial(request):
-    return render(request, 'infoActividad.html')   
+    return render(request, 'infoActividad.html')  
+
+def infoEvaluarTutor(request):
+    return render(request, 'evaluarTutor.html') 

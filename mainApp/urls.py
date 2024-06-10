@@ -6,4 +6,5 @@ urlpatterns = [
     path('agregarActividad', views.agregarActividadTutorial, name='agregarActividad'),
     path('editarActividad', views.editarActividadTutorial, name='editarActividad'),
     path('infoActividad', views.infoActividadTutorial, name='infoActividad'),
+    path('evaluarTutor', views.infoEvaluarTutor, name='infoTutor')
 ]
