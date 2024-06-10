@@ -18,3 +18,12 @@ def infoActividadTutorial(request):
 
 def infoEvaluarTutor(request):
     return render(request, 'evaluarTutor.html') 
+
+def infoatencionIndividual(request):
+    return render (request, 'atencionIndividual.html')
+
+def infoeditarAtencion(request):
+    return render (request,'editarAtencion.html')
+
+def inforegistrarAtencion(request):
+    return render (request, 'registrarAtencion.html')
